@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Analyse des sorties de modèles </title>
+    <link>http://www.alea.io/tags/go/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2015-01-31 08:42:10 &#43;0100 CET</updated>
+
+    
+      
+        <item>
+          <title>premier</title>
+          <link>http://www.alea.io/post/premier/</link>
+          <pubDate>Sat, 31 Jan 2015 08:42:10 CET</pubDate>
+          <author></author>
+          <guid>http://www.alea.io/post/premier/</guid>
+          <description>
+
+&lt;p&gt;je fais un test de D3&lt;/p&gt;
+
+&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+
+&lt;h2 id=&#34;mon-premier-post:0f4812065ac00dc4350030054482163d&#34;&gt;Mon premier post&lt;/h2&gt;
+
+&lt;p&gt;je fais des essais&lt;/p&gt;
+
+&lt;p&gt;And if you&amp;rsquo;d like to use syntax highlighting, include the language:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;if (isAwesome){
+  return true
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import pandas
+
+print(&amp;quot;hello world&amp;quot;)
+for i in range(20):
+  print i
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>
