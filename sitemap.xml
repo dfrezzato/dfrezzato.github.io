@@ -2,49 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.alea.io/</loc>
-    <lastmod>2016-01-31T14:22:26+01:00</lastmod>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2016-02-07T15:02:19+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.alea.io/post/cinquieme/</loc>
-    <lastmod>2016-01-31T14:22:26+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.alea.io/post/quatrieme/</loc>
-    <lastmod>2016-01-31T14:22:15+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.alea.io/post/troisieme/</loc>
-    <lastmod>2016-01-31T14:21:44+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.alea.io/post/deuxieme/</loc>
-    <lastmod>2016-01-31T08:46:05+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.alea.io/post/premier/</loc>
-    <lastmod>2015-01-31T08:42:10+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.alea.io/fixed/barchart/</loc>
-    <lastmod>2016-01-31T14:44:14+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.alea.io/fixed/multiseries/</loc>
-    <lastmod>2016-01-31T14:26:54+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.alea.io/fixed/about/</loc>
-    <lastmod>2016-01-31T14:56:59+01:00</lastmod>
+    <loc>http://localhost:1313/post/hugo_github/</loc>
+    <lastmod>2016-02-07T15:02:19+01:00</lastmod>
   </url>
   
 </urlset>

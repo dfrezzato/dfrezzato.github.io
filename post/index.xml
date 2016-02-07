@@ -1,166 +1,97 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Analyse des sorties de modèles </title>
-    <link>http://www.alea.io/post/</link>
+    <title>notepad </title>
+    <link>http://localhost:1313/post/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
-    <updated>2016-01-31 14:22:26 &#43;0100 CET</updated>
+    <updated>2016-02-07 15:02:19 &#43;0100 CET</updated>
 
     
       
         <item>
-          <title>cinquieme</title>
-          <link>http://www.alea.io/post/cinquieme/</link>
-          <pubDate>Sun, 31 Jan 2016 14:22:26 CET</pubDate>
+          <title>mise en place</title>
+          <link>http://localhost:1313/post/hugo_github/</link>
+          <pubDate>Sun, 07 Feb 2016 15:02:19 CET</pubDate>
           <author></author>
-          <guid>http://www.alea.io/post/cinquieme/</guid>
-          <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis dolor ut metus ultrices feugiat. Duis sit amet sem leo. Nullam felis sem, sagittis non pretium vel, imperdiet id urna. Etiam malesuada est sit amet semper sodales. Sed quis tempor velit, a vestibulum purus. Vivamus sagittis suscipit mauris, nec auctor magna cursus nec. Ut a sollicitudin augue, et semper orci. Quisque non sapien et elit suscipit gravida. Sed ullamcorper est eu diam tempor, ut finibus lacus tempus. Fusce congue vel ante dignissim elementum. Vivamus eu aliquet est, at aliquet sapien. Nulla metus sapien, faucibus non ante sit amet, efficitur egestas mauris. Nunc ac arcu fermentum, luctus neque id, scelerisque orci. In ornare justo malesuada sapien aliquam scelerisque. Donec malesuada, ex a mattis tincidunt, eros justo bibendum odio, at laoreet augue nisi at justo. In placerat et eros a malesuada.&lt;/p&gt;
-
-&lt;p&gt;Proin egestas elit id libero pharetra faucibus. Sed nec ornare dolor. Vivamus sit amet arcu ligula. Morbi eget dapibus orci. Donec volutpat convallis ligula id lobortis. Curabitur porttitor urna sit amet turpis facilisis, eget eleifend orci blandit. Pellentesque semper venenatis eros non efficitur. Curabitur magna nulla, pulvinar nec pretium a, feugiat in dolor. Donec id feugiat est. Vestibulum maximus, lorem non iaculis maximus, mi leo pharetra lorem, in ullamcorper ante ligula eget tellus. Vestibulum faucibus auctor libero, vitae commodo arcu tristique vitae. Nunc nec placerat justo, lacinia egestas nisl. Aliquam interdum sapien massa, a imperdiet tortor finibus tempus. Nunc leo eros, convallis nec quam a, pharetra luctus mi.&lt;/p&gt;
-
-&lt;p&gt;Nam tempor lobortis magna id dignissim. Vivamus dictum odio at odio dictum tincidunt. Vestibulum sodales quis enim non pellentesque. Praesent in fermentum diam, nec ullamcorper lorem. Curabitur tempor tortor a porttitor laoreet. Cras volutpat orci ut orci venenatis sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse finibus vestibulum arcu eget bibendum. Donec blandit fringilla porta. Ut sodales placerat tellus, vel cursus felis congue et.&lt;/p&gt;
-</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>quatrieme</title>
-          <link>http://www.alea.io/post/quatrieme/</link>
-          <pubDate>Sun, 31 Jan 2016 14:22:15 CET</pubDate>
-          <author></author>
-          <guid>http://www.alea.io/post/quatrieme/</guid>
-          <description></description>
-        </item>
-      
-    
-      
-        <item>
-          <title>troisieme</title>
-          <link>http://www.alea.io/post/troisieme/</link>
-          <pubDate>Sun, 31 Jan 2016 14:21:44 CET</pubDate>
-          <author></author>
-          <guid>http://www.alea.io/post/troisieme/</guid>
-          <description></description>
-        </item>
-      
-    
-      
-        <item>
-          <title>deuxieme</title>
-          <link>http://www.alea.io/post/deuxieme/</link>
-          <pubDate>Sun, 31 Jan 2016 08:46:05 CET</pubDate>
-          <author></author>
-          <guid>http://www.alea.io/post/deuxieme/</guid>
-          <description>&lt;p&gt;test2&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis dolor ut metus ultrices feugiat. Duis sit amet sem leo. Nullam felis sem, sagittis non pretium vel, imperdiet id urna. Etiam malesuada est sit amet semper sodales. Sed quis tempor velit, a vestibulum purus. Vivamus sagittis suscipit mauris, nec auctor magna cursus nec. Ut a sollicitudin augue, et semper orci. Quisque non sapien et elit suscipit gravida. Sed ullamcorper est eu diam tempor, ut finibus lacus tempus. Fusce congue vel ante dignissim elementum. Vivamus eu aliquet est, at aliquet sapien. Nulla metus sapien, faucibus non ante sit amet, efficitur egestas mauris. Nunc ac arcu fermentum, luctus neque id, scelerisque orci. In ornare justo malesuada sapien aliquam scelerisque. Donec malesuada, ex a mattis tincidunt, eros justo bibendum odio, at laoreet augue nisi at justo. In placerat et eros a malesuada.&lt;/p&gt;
-
-&lt;p&gt;Proin egestas elit id libero pharetra faucibus. Sed nec ornare dolor. Vivamus sit amet arcu ligula. Morbi eget dapibus orci. Donec volutpat convallis ligula id lobortis. Curabitur porttitor urna sit amet turpis facilisis, eget eleifend orci blandit. Pellentesque semper venenatis eros non efficitur. Curabitur magna nulla, pulvinar nec pretium a, feugiat in dolor. Donec id feugiat est. Vestibulum maximus, lorem non iaculis maximus, mi leo pharetra lorem, in ullamcorper ante ligula eget tellus. Vestibulum faucibus auctor libero, vitae commodo arcu tristique vitae. Nunc nec placerat justo, lacinia egestas nisl. Aliquam interdum sapien massa, a imperdiet tortor finibus tempus. Nunc leo eros, convallis nec quam a, pharetra luctus mi.&lt;/p&gt;
-
-&lt;p&gt;Nam tempor lobortis magna id dignissim. Vivamus dictum odio at odio dictum tincidunt. Vestibulum sodales quis enim non pellentesque. Praesent in fermentum diam, nec ullamcorper lorem. Curabitur tempor tortor a porttitor laoreet. Cras volutpat orci ut orci venenatis sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse finibus vestibulum arcu eget bibendum. Donec blandit fringilla porta. Ut sodales placerat tellus, vel cursus felis congue et.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis dolor ut metus ultrices feugiat. Duis sit amet sem leo. Nullam felis sem, sagittis non pretium vel, imperdiet id urna. Etiam malesuada est sit amet semper sodales. Sed quis tempor velit, a vestibulum purus. Vivamus sagittis suscipit mauris, nec auctor magna cursus nec. Ut a sollicitudin augue, et semper orci. Quisque non sapien et elit suscipit gravida. Sed ullamcorper est eu diam tempor, ut finibus lacus tempus. Fusce congue vel ante dignissim elementum. Vivamus eu aliquet est, at aliquet sapien. Nulla metus sapien, faucibus non ante sit amet, efficitur egestas mauris. Nunc ac arcu fermentum, luctus neque id, scelerisque orci. In ornare justo malesuada sapien aliquam scelerisque. Donec malesuada, ex a mattis tincidunt, eros justo bibendum odio, at laoreet augue nisi at justo. In placerat et eros a malesuada.&lt;/p&gt;
-
-&lt;p&gt;Proin egestas elit id libero pharetra faucibus. Sed nec ornare dolor. Vivamus sit amet arcu ligula. Morbi eget dapibus orci. Donec volutpat convallis ligula id lobortis. Curabitur porttitor urna sit amet turpis facilisis, eget eleifend orci blandit. Pellentesque semper venenatis eros non efficitur. Curabitur magna nulla, pulvinar nec pretium a, feugiat in dolor. Donec id feugiat est. Vestibulum maximus, lorem non iaculis maximus, mi leo pharetra lorem, in ullamcorper ante ligula eget tellus. Vestibulum faucibus auctor libero, vitae commodo arcu tristique vitae. Nunc nec placerat justo, lacinia egestas nisl. Aliquam interdum sapien massa, a imperdiet tortor finibus tempus. Nunc leo eros, convallis nec quam a, pharetra luctus mi.&lt;/p&gt;
-
-&lt;p&gt;Nam tempor lobortis magna id dignissim. Vivamus dictum odio at odio dictum tincidunt. Vestibulum sodales quis enim non pellentesque. Praesent in fermentum diam, nec ullamcorper lorem. Curabitur tempor tortor a porttitor laoreet. Cras volutpat orci ut orci venenatis sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse finibus vestibulum arcu eget bibendum. Donec blandit fringilla porta. Ut sodales placerat tellus, vel cursus felis congue et.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis dolor ut metus ultrices feugiat. Duis sit amet sem leo. Nullam felis sem, sagittis non pretium vel, imperdiet id urna. Etiam malesuada est sit amet semper sodales. Sed quis tempor velit, a vestibulum purus. Vivamus sagittis suscipit mauris, nec auctor magna cursus nec. Ut a sollicitudin augue, et semper orci. Quisque non sapien et elit suscipit gravida. Sed ullamcorper est eu diam tempor, ut finibus lacus tempus. Fusce congue vel ante dignissim elementum. Vivamus eu aliquet est, at aliquet sapien. Nulla metus sapien, faucibus non ante sit amet, efficitur egestas mauris. Nunc ac arcu fermentum, luctus neque id, scelerisque orci. In ornare justo malesuada sapien aliquam scelerisque. Donec malesuada, ex a mattis tincidunt, eros justo bibendum odio, at laoreet augue nisi at justo. In placerat et eros a malesuada.&lt;/p&gt;
-
-&lt;p&gt;Proin egestas elit id libero pharetra faucibus. Sed nec ornare dolor. Vivamus sit amet arcu ligula. Morbi eget dapibus orci. Donec volutpat convallis ligula id lobortis. Curabitur porttitor urna sit amet turpis facilisis, eget eleifend orci blandit. Pellentesque semper venenatis eros non efficitur. Curabitur magna nulla, pulvinar nec pretium a, feugiat in dolor. Donec id feugiat est. Vestibulum maximus, lorem non iaculis maximus, mi leo pharetra lorem, in ullamcorper ante ligula eget tellus. Vestibulum faucibus auctor libero, vitae commodo arcu tristique vitae. Nunc nec placerat justo, lacinia egestas nisl. Aliquam interdum sapien massa, a imperdiet tortor finibus tempus. Nunc leo eros, convallis nec quam a, pharetra luctus mi.&lt;/p&gt;
-
-&lt;p&gt;Nam tempor lobortis magna id dignissim. Vivamus dictum odio at odio dictum tincidunt. Vestibulum sodales quis enim non pellentesque. Praesent in fermentum diam, nec ullamcorper lorem. Curabitur tempor tortor a porttitor laoreet. Cras volutpat orci ut orci venenatis sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse finibus vestibulum arcu eget bibendum. Donec blandit fringilla porta. Ut sodales placerat tellus, vel cursus felis congue et.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis dolor ut metus ultrices feugiat. Duis sit amet sem leo. Nullam felis sem, sagittis non pretium vel, imperdiet id urna. Etiam malesuada est sit amet semper sodales. Sed quis tempor velit, a vestibulum purus. Vivamus sagittis suscipit mauris, nec auctor magna cursus nec. Ut a sollicitudin augue, et semper orci. Quisque non sapien et elit suscipit gravida. Sed ullamcorper est eu diam tempor, ut finibus lacus tempus. Fusce congue vel ante dignissim elementum. Vivamus eu aliquet est, at aliquet sapien. Nulla metus sapien, faucibus non ante sit amet, efficitur egestas mauris. Nunc ac arcu fermentum, luctus neque id, scelerisque orci. In ornare justo malesuada sapien aliquam scelerisque. Donec malesuada, ex a mattis tincidunt, eros justo bibendum odio, at laoreet augue nisi at justo. In placerat et eros a malesuada.&lt;/p&gt;
-
-&lt;p&gt;Proin egestas elit id libero pharetra faucibus. Sed nec ornare dolor. Vivamus sit amet arcu ligula. Morbi eget dapibus orci. Donec volutpat convallis ligula id lobortis. Curabitur porttitor urna sit amet turpis facilisis, eget eleifend orci blandit. Pellentesque semper venenatis eros non efficitur. Curabitur magna nulla, pulvinar nec pretium a, feugiat in dolor. Donec id feugiat est. Vestibulum maximus, lorem non iaculis maximus, mi leo pharetra lorem, in ullamcorper ante ligula eget tellus. Vestibulum faucibus auctor libero, vitae commodo arcu tristique vitae. Nunc nec placerat justo, lacinia egestas nisl. Aliquam interdum sapien massa, a imperdiet tortor finibus tempus. Nunc leo eros, convallis nec quam a, pharetra luctus mi.&lt;/p&gt;
-
-&lt;p&gt;Nam tempor lobortis magna id dignissim. Vivamus dictum odio at odio dictum tincidunt. Vestibulum sodales quis enim non pellentesque. Praesent in fermentum diam, nec ullamcorper lorem. Curabitur tempor tortor a porttitor laoreet. Cras volutpat orci ut orci venenatis sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse finibus vestibulum arcu eget bibendum. Donec blandit fringilla porta. Ut sodales placerat tellus, vel cursus felis congue et.&lt;/p&gt;
-
-&lt;p&gt;Proin egestas elit id libero pharetra faucibus. Sed nec ornare dolor. Vivamus sit amet arcu ligula. Morbi eget dapibus orci. Donec volutpat convallis ligula id lobortis. Curabitur porttitor urna sit amet turpis facilisis, eget eleifend orci blandit. Pellentesque semper venenatis eros non efficitur. Curabitur magna nulla, pulvinar nec pretium a, feugiat in dolor. Donec id feugiat est. Vestibulum maximus, lorem non iaculis maximus, mi leo pharetra lorem, in ullamcorper ante ligula eget tellus. Vestibulum faucibus auctor libero, vitae commodo arcu tristique vitae. Nunc nec placerat justo, lacinia egestas nisl. Aliquam interdum sapien massa, a imperdiet tortor finibus tempus. Nunc leo eros, convallis nec quam a, pharetra luctus mi.&lt;/p&gt;
-
-&lt;p&gt;Nam tempor lobortis magna id dignissim. Vivamus dictum odio at odio dictum tincidunt. Vestibulum sodales quis enim non pellentesque. Praesent in fermentum diam, nec ullamcorper lorem. Curabitur tempor tortor a porttitor laoreet. Cras volutpat orci ut orci venenatis sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse finibus vestibulum arcu eget bibendum. Donec blandit fringilla porta. Ut sodales placerat tellus, vel cursus felis congue et.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis dolor ut metus ultrices feugiat. Duis sit amet sem leo. Nullam felis sem, sagittis non pretium vel, imperdiet id urna. Etiam malesuada est sit amet semper sodales. Sed quis tempor velit, a vestibulum purus. Vivamus sagittis suscipit mauris, nec auctor magna cursus nec. Ut a sollicitudin augue, et semper orci. Quisque non sapien et elit suscipit gravida. Sed ullamcorper est eu diam tempor, ut finibus lacus tempus. Fusce congue vel ante dignissim elementum. Vivamus eu aliquet est, at aliquet sapien. Nulla metus sapien, faucibus non ante sit amet, efficitur egestas mauris. Nunc ac arcu fermentum, luctus neque id, scelerisque orci. In ornare justo malesuada sapien aliquam scelerisque. Donec malesuada, ex a mattis tincidunt, eros justo bibendum odio, at laoreet augue nisi at justo. In placerat et eros a malesuada.&lt;/p&gt;
-
-&lt;p&gt;Proin egestas elit id libero pharetra faucibus. Sed nec ornare dolor. Vivamus sit amet arcu ligula. Morbi eget dapibus orci. Donec volutpat convallis ligula id lobortis. Curabitur porttitor urna sit amet turpis facilisis, eget eleifend orci blandit. Pellentesque semper venenatis eros non efficitur. Curabitur magna nulla, pulvinar nec pretium a, feugiat in dolor. Donec id feugiat est. Vestibulum maximus, lorem non iaculis maximus, mi leo pharetra lorem, in ullamcorper ante ligula eget tellus. Vestibulum faucibus auctor libero, vitae commodo arcu tristique vitae. Nunc nec placerat justo, lacinia egestas nisl. Aliquam interdum sapien massa, a imperdiet tortor finibus tempus. Nunc leo eros, convallis nec quam a, pharetra luctus mi.&lt;/p&gt;
-
-&lt;p&gt;Nam tempor lobortis magna id dignissim. Vivamus dictum odio at odio dictum tincidunt. Vestibulum sodales quis enim non pellentesque. Praesent in fermentum diam, nec ullamcorper lorem. Curabitur tempor tortor a porttitor laoreet. Cras volutpat orci ut orci venenatis sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse finibus vestibulum arcu eget bibendum. Donec blandit fringilla porta. Ut sodales placerat tellus, vel cursus felis congue et.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis dolor ut metus ultrices feugiat. Duis sit amet sem leo. Nullam felis sem, sagittis non pretium vel, imperdiet id urna. Etiam malesuada est sit amet semper sodales. Sed quis tempor velit, a vestibulum purus. Vivamus sagittis suscipit mauris, nec auctor magna cursus nec. Ut a sollicitudin augue, et semper orci. Quisque non sapien et elit suscipit gravida. Sed ullamcorper est eu diam tempor, ut finibus lacus tempus. Fusce congue vel ante dignissim elementum. Vivamus eu aliquet est, at aliquet sapien. Nulla metus sapien, faucibus non ante sit amet, efficitur egestas mauris. Nunc ac arcu fermentum, luctus neque id, scelerisque orci. In ornare justo malesuada sapien aliquam scelerisque. Donec malesuada, ex a mattis tincidunt, eros justo bibendum odio, at laoreet augue nisi at justo. In placerat et eros a malesuada.&lt;/p&gt;
-
-&lt;p&gt;Proin egestas elit id libero pharetra faucibus. Sed nec ornare dolor. Vivamus sit amet arcu ligula. Morbi eget dapibus orci. Donec volutpat convallis ligula id lobortis. Curabitur porttitor urna sit amet turpis facilisis, eget eleifend orci blandit. Pellentesque semper venenatis eros non efficitur. Curabitur magna nulla, pulvinar nec pretium a, feugiat in dolor. Donec id feugiat est. Vestibulum maximus, lorem non iaculis maximus, mi leo pharetra lorem, in ullamcorper ante ligula eget tellus. Vestibulum faucibus auctor libero, vitae commodo arcu tristique vitae. Nunc nec placerat justo, lacinia egestas nisl. Aliquam interdum sapien massa, a imperdiet tortor finibus tempus. Nunc leo eros, convallis nec quam a, pharetra luctus mi.&lt;/p&gt;
-
-&lt;p&gt;Nam tempor lobortis magna id dignissim. Vivamus dictum odio at odio dictum tincidunt. Vestibulum sodales quis enim non pellentesque. Praesent in fermentum diam, nec ullamcorper lorem. Curabitur tempor tortor a porttitor laoreet. Cras volutpat orci ut orci venenatis sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse finibus vestibulum arcu eget bibendum. Donec blandit fringilla porta. Ut sodales placerat tellus, vel cursus felis congue et.&lt;/p&gt;
-
-&lt;p&gt;Proin egestas elit id libero pharetra faucibus. Sed nec ornare dolor. Vivamus sit amet arcu ligula. Morbi eget dapibus orci. Donec volutpat convallis ligula id lobortis. Curabitur porttitor urna sit amet turpis facilisis, eget eleifend orci blandit. Pellentesque semper venenatis eros non efficitur. Curabitur magna nulla, pulvinar nec pretium a, feugiat in dolor. Donec id feugiat est. Vestibulum maximus, lorem non iaculis maximus, mi leo pharetra lorem, in ullamcorper ante ligula eget tellus. Vestibulum faucibus auctor libero, vitae commodo arcu tristique vitae. Nunc nec placerat justo, lacinia egestas nisl. Aliquam interdum sapien massa, a imperdiet tortor finibus tempus. Nunc leo eros, convallis nec quam a, pharetra luctus mi.&lt;/p&gt;
-
-&lt;p&gt;Nam tempor lobortis magna id dignissim. Vivamus dictum odio at odio dictum tincidunt. Vestibulum sodales quis enim non pellentesque. Praesent in fermentum diam, nec ullamcorper lorem. Curabitur tempor tortor a porttitor laoreet. Cras volutpat orci ut orci venenatis sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse finibus vestibulum arcu eget bibendum. Donec blandit fringilla porta. Ut sodales placerat tellus, vel cursus felis congue et.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis dolor ut metus ultrices feugiat. Duis sit amet sem leo. Nullam felis sem, sagittis non pretium vel, imperdiet id urna. Etiam malesuada est sit amet semper sodales. Sed quis tempor velit, a vestibulum purus. Vivamus sagittis suscipit mauris, nec auctor magna cursus nec. Ut a sollicitudin augue, et semper orci. Quisque non sapien et elit suscipit gravida. Sed ullamcorper est eu diam tempor, ut finibus lacus tempus. Fusce congue vel ante dignissim elementum. Vivamus eu aliquet est, at aliquet sapien. Nulla metus sapien, faucibus non ante sit amet, efficitur egestas mauris. Nunc ac arcu fermentum, luctus neque id, scelerisque orci. In ornare justo malesuada sapien aliquam scelerisque. Donec malesuada, ex a mattis tincidunt, eros justo bibendum odio, at laoreet augue nisi at justo. In placerat et eros a malesuada.&lt;/p&gt;
-
-&lt;p&gt;Proin egestas elit id libero pharetra faucibus. Sed nec ornare dolor. Vivamus sit amet arcu ligula. Morbi eget dapibus orci. Donec volutpat convallis ligula id lobortis. Curabitur porttitor urna sit amet turpis facilisis, eget eleifend orci blandit. Pellentesque semper venenatis eros non efficitur. Curabitur magna nulla, pulvinar nec pretium a, feugiat in dolor. Donec id feugiat est. Vestibulum maximus, lorem non iaculis maximus, mi leo pharetra lorem, in ullamcorper ante ligula eget tellus. Vestibulum faucibus auctor libero, vitae commodo arcu tristique vitae. Nunc nec placerat justo, lacinia egestas nisl. Aliquam interdum sapien massa, a imperdiet tortor finibus tempus. Nunc leo eros, convallis nec quam a, pharetra luctus mi.&lt;/p&gt;
-
-&lt;p&gt;Nam tempor lobortis magna id dignissim. Vivamus dictum odio at odio dictum tincidunt. Vestibulum sodales quis enim non pellentesque. Praesent in fermentum diam, nec ullamcorper lorem. Curabitur tempor tortor a porttitor laoreet. Cras volutpat orci ut orci venenatis sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse finibus vestibulum arcu eget bibendum. Donec blandit fringilla porta. Ut sodales placerat tellus, vel cursus felis congue et.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis dolor ut metus ultrices feugiat. Duis sit amet sem leo. Nullam felis sem, sagittis non pretium vel, imperdiet id urna. Etiam malesuada est sit amet semper sodales. Sed quis tempor velit, a vestibulum purus. Vivamus sagittis suscipit mauris, nec auctor magna cursus nec. Ut a sollicitudin augue, et semper orci. Quisque non sapien et elit suscipit gravida. Sed ullamcorper est eu diam tempor, ut finibus lacus tempus. Fusce congue vel ante dignissim elementum. Vivamus eu aliquet est, at aliquet sapien. Nulla metus sapien, faucibus non ante sit amet, efficitur egestas mauris. Nunc ac arcu fermentum, luctus neque id, scelerisque orci. In ornare justo malesuada sapien aliquam scelerisque. Donec malesuada, ex a mattis tincidunt, eros justo bibendum odio, at laoreet augue nisi at justo. In placerat et eros a malesuada.&lt;/p&gt;
-
-&lt;p&gt;Proin egestas elit id libero pharetra faucibus. Sed nec ornare dolor. Vivamus sit amet arcu ligula. Morbi eget dapibus orci. Donec volutpat convallis ligula id lobortis. Curabitur porttitor urna sit amet turpis facilisis, eget eleifend orci blandit. Pellentesque semper venenatis eros non efficitur. Curabitur magna nulla, pulvinar nec pretium a, feugiat in dolor. Donec id feugiat est. Vestibulum maximus, lorem non iaculis maximus, mi leo pharetra lorem, in ullamcorper ante ligula eget tellus. Vestibulum faucibus auctor libero, vitae commodo arcu tristique vitae. Nunc nec placerat justo, lacinia egestas nisl. Aliquam interdum sapien massa, a imperdiet tortor finibus tempus. Nunc leo eros, convallis nec quam a, pharetra luctus mi.&lt;/p&gt;
-
-&lt;p&gt;Nam tempor lobortis magna id dignissim. Vivamus dictum odio at odio dictum tincidunt. Vestibulum sodales quis enim non pellentesque. Praesent in fermentum diam, nec ullamcorper lorem. Curabitur tempor tortor a porttitor laoreet. Cras volutpat orci ut orci venenatis sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse finibus vestibulum arcu eget bibendum. Donec blandit fringilla porta. Ut sodales placerat tellus, vel cursus felis congue et.&lt;/p&gt;
-
-&lt;p&gt;Proin egestas elit id libero pharetra faucibus. Sed nec ornare dolor. Vivamus sit amet arcu ligula. Morbi eget dapibus orci. Donec volutpat convallis ligula id lobortis. Curabitur porttitor urna sit amet turpis facilisis, eget eleifend orci blandit. Pellentesque semper venenatis eros non efficitur. Curabitur magna nulla, pulvinar nec pretium a, feugiat in dolor. Donec id feugiat est. Vestibulum maximus, lorem non iaculis maximus, mi leo pharetra lorem, in ullamcorper ante ligula eget tellus. Vestibulum faucibus auctor libero, vitae commodo arcu tristique vitae. Nunc nec placerat justo, lacinia egestas nisl. Aliquam interdum sapien massa, a imperdiet tortor finibus tempus. Nunc leo eros, convallis nec quam a, pharetra luctus mi.&lt;/p&gt;
-
-&lt;p&gt;Nam tempor lobortis magna id dignissim. Vivamus dictum odio at odio dictum tincidunt. Vestibulum sodales quis enim non pellentesque. Praesent in fermentum diam, nec ullamcorper lorem. Curabitur tempor tortor a porttitor laoreet. Cras volutpat orci ut orci venenatis sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse finibus vestibulum arcu eget bibendum. Donec blandit fringilla porta. Ut sodales placerat tellus, vel cursus felis congue et.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis dolor ut metus ultrices feugiat. Duis sit amet sem leo. Nullam felis sem, sagittis non pretium vel, imperdiet id urna. Etiam malesuada est sit amet semper sodales. Sed quis tempor velit, a vestibulum purus. Vivamus sagittis suscipit mauris, nec auctor magna cursus nec. Ut a sollicitudin augue, et semper orci. Quisque non sapien et elit suscipit gravida. Sed ullamcorper est eu diam tempor, ut finibus lacus tempus. Fusce congue vel ante dignissim elementum. Vivamus eu aliquet est, at aliquet sapien. Nulla metus sapien, faucibus non ante sit amet, efficitur egestas mauris. Nunc ac arcu fermentum, luctus neque id, scelerisque orci. In ornare justo malesuada sapien aliquam scelerisque. Donec malesuada, ex a mattis tincidunt, eros justo bibendum odio, at laoreet augue nisi at justo. In placerat et eros a malesuada.&lt;/p&gt;
-
-&lt;p&gt;Proin egestas elit id libero pharetra faucibus. Sed nec ornare dolor. Vivamus sit amet arcu ligula. Morbi eget dapibus orci. Donec volutpat convallis ligula id lobortis. Curabitur porttitor urna sit amet turpis facilisis, eget eleifend orci blandit. Pellentesque semper venenatis eros non efficitur. Curabitur magna nulla, pulvinar nec pretium a, feugiat in dolor. Donec id feugiat est. Vestibulum maximus, lorem non iaculis maximus, mi leo pharetra lorem, in ullamcorper ante ligula eget tellus. Vestibulum faucibus auctor libero, vitae commodo arcu tristique vitae. Nunc nec placerat justo, lacinia egestas nisl. Aliquam interdum sapien massa, a imperdiet tortor finibus tempus. Nunc leo eros, convallis nec quam a, pharetra luctus mi.&lt;/p&gt;
-
-&lt;p&gt;Nam tempor lobortis magna id dignissim. Vivamus dictum odio at odio dictum tincidunt. Vestibulum sodales quis enim non pellentesque. Praesent in fermentum diam, nec ullamcorper lorem. Curabitur tempor tortor a porttitor laoreet. Cras volutpat orci ut orci venenatis sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse finibus vestibulum arcu eget bibendum. Donec blandit fringilla porta. Ut sodales placerat tellus, vel cursus felis congue et.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis dolor ut metus ultrices feugiat. Duis sit amet sem leo. Nullam felis sem, sagittis non pretium vel, imperdiet id urna. Etiam malesuada est sit amet semper sodales. Sed quis tempor velit, a vestibulum purus. Vivamus sagittis suscipit mauris, nec auctor magna cursus nec. Ut a sollicitudin augue, et semper orci. Quisque non sapien et elit suscipit gravida. Sed ullamcorper est eu diam tempor, ut finibus lacus tempus. Fusce congue vel ante dignissim elementum. Vivamus eu aliquet est, at aliquet sapien. Nulla metus sapien, faucibus non ante sit amet, efficitur egestas mauris. Nunc ac arcu fermentum, luctus neque id, scelerisque orci. In ornare justo malesuada sapien aliquam scelerisque. Donec malesuada, ex a mattis tincidunt, eros justo bibendum odio, at laoreet augue nisi at justo. In placerat et eros a malesuada.&lt;/p&gt;
-
-&lt;p&gt;Proin egestas elit id libero pharetra faucibus. Sed nec ornare dolor. Vivamus sit amet arcu ligula. Morbi eget dapibus orci. Donec volutpat convallis ligula id lobortis. Curabitur porttitor urna sit amet turpis facilisis, eget eleifend orci blandit. Pellentesque semper venenatis eros non efficitur. Curabitur magna nulla, pulvinar nec pretium a, feugiat in dolor. Donec id feugiat est. Vestibulum maximus, lorem non iaculis maximus, mi leo pharetra lorem, in ullamcorper ante ligula eget tellus. Vestibulum faucibus auctor libero, vitae commodo arcu tristique vitae. Nunc nec placerat justo, lacinia egestas nisl. Aliquam interdum sapien massa, a imperdiet tortor finibus tempus. Nunc leo eros, convallis nec quam a, pharetra luctus mi.&lt;/p&gt;
-
-&lt;p&gt;Nam tempor lobortis magna id dignissim. Vivamus dictum odio at odio dictum tincidunt. Vestibulum sodales quis enim non pellentesque. Praesent in fermentum diam, nec ullamcorper lorem. Curabitur tempor tortor a porttitor laoreet. Cras volutpat orci ut orci venenatis sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse finibus vestibulum arcu eget bibendum. Donec blandit fringilla porta. Ut sodales placerat tellus, vel cursus felis congue et.&lt;/p&gt;
-</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>premier</title>
-          <link>http://www.alea.io/post/premier/</link>
-          <pubDate>Sat, 31 Jan 2015 08:42:10 CET</pubDate>
-          <author></author>
-          <guid>http://www.alea.io/post/premier/</guid>
+          <guid>http://localhost:1313/post/hugo_github/</guid>
           <description>
 
-&lt;p&gt;je fais un test de D3&lt;/p&gt;
+&lt;h2 id=&#34;hugo:3b6eaebee660f5e91c409f85d4ddd0a9&#34;&gt;Hugo&lt;/h2&gt;
 
-&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+&lt;p&gt;Hugo est un programme de génération de site statique qui permet de transformer aisément des fichiers markdown en site web.&lt;/p&gt;
 
-&lt;h2 id=&#34;mon-premier-post:0f4812065ac00dc4350030054482163d&#34;&gt;Mon premier post&lt;/h2&gt;
+&lt;h2 id=&#34;configuration:3b6eaebee660f5e91c409f85d4ddd0a9&#34;&gt;Configuration&lt;/h2&gt;
 
-&lt;p&gt;je fais des essais&lt;/p&gt;
+&lt;p&gt;Récupérer &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;hugo&lt;/a&gt; et suivre les instructions d&amp;rsquo;installation (c&amp;rsquo;est en fait un fichier binaire, il n&amp;rsquo;y a pas de réelle installation).&lt;/p&gt;
 
-&lt;p&gt;And if you&amp;rsquo;d like to use syntax highlighting, include the language:&lt;/p&gt;
+&lt;p&gt;On peut maintenant créer un squelette de site :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;if (isAwesome){
-  return true
-}
+&lt;pre&gt;&lt;code&gt;$ hugo new site &amp;lt;nom du site&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import pandas
+&lt;p&gt;crée un répertoire &lt;nom du site&gt; qui contient une structure prédéfinie destinée à être transformée par Hugo en site web.&lt;/p&gt;
 
-print(&amp;quot;hello world&amp;quot;)
-for i in range(20):
-  print i
+&lt;pre&gt;&lt;code&gt;$ cd &amp;lt;nom du site&amp;gt;
+$ mkdir themes
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;le dossier themes contiendra l&amp;rsquo;esthétique du site ainsi que les ressources statiques (javascript, image etc&amp;hellip;) qu&amp;rsquo;on voudra utiliser par la suite.&lt;/p&gt;
+
+&lt;p&gt;Maintenant que le dossier de themes est prêt, on peut y cloner un thème&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cd themes
+$ git clone https://github.com/tummychow/lanyon-hugo.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Le thème ne fonctionnera pas directement : il faut indiquer un paramètre dans le fichier de configuration config.toml à la racine du site :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[Params]
+	DateForm = &amp;quot;Jan 2 2006&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Tant qu&amp;rsquo;on est dans le fichier de configuration, on &lt;em&gt;peut&lt;/em&gt; (mais pas obligatoire) en profiter pour changer le titre du site et la &lt;code&gt;baseurl&lt;/code&gt; qui contient le nom de domaine :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;baseurl = &amp;quot;http://mon-superbe-site/&amp;quot;
+languageCode = &amp;quot;fr-fr&amp;quot;
+title = &amp;quot;notepad&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;On peut maintenant créer un nouveau post :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cd &amp;lt;nom du site&amp;gt;
+$ hugo new post/premier_post.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Cette commande créera un fichier post.md dans le répertoire &lt;code&gt;&amp;lt;nom du site&amp;gt;/content/post/&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Le fichier &lt;code&gt;post.md&lt;/code&gt; comporte un entête particulier destiné à être interprété par &lt;code&gt;hugo&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;+++
+date = &amp;quot;2016-02-07T15:02:19+01:00&amp;quot;
+draft = true
+title = &amp;quot;titre du post qui sera affiché dans le site&amp;quot;
++++
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ajouter du contenu à la suite de l&amp;rsquo;entête et lancer la commande :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo server --theme=lanyon-hugo --buildDrafts
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Si on est sous windows, pour la version de hugo disponible actuellement (le problème devrait disparaître pour la version v0.16), il faut plutôt lancer la commande :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo server --theme=lanyon-hugo --buildDrafts --renderToDisk=true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Cette commande indique à hugo d&amp;rsquo;utiliser le theme lanyon-hugo (qu&amp;rsquo;on vient de cloner depuis github) et d&amp;rsquo;afficher tout les posts, y compris les drafts. En effet, l&amp;rsquo;entête contenait &lt;code&gt;draft=true&lt;/code&gt; : par défaut, sans l&amp;rsquo;option &lt;code&gt;--buildDrafts&lt;/code&gt;, hugo n&amp;rsquo;aurait pas traité notre &lt;code&gt;post.md&lt;/code&gt; pour le transformer en site web.&lt;/p&gt;
+
+&lt;p&gt;à ce stade, nous avons une page acessible en prévisualisation dans le navigateur (un &lt;em&gt;vrai&lt;/em&gt; navigateur, pas internet explorer) ; il suffit d&amp;rsquo;indiquer l&amp;rsquo;url : &lt;code&gt;localhost:1313&lt;/code&gt; dans la barre d&amp;rsquo;adresse.&lt;/p&gt;
+
+&lt;h2 id=&#34;où-en-est-on:3b6eaebee660f5e91c409f85d4ddd0a9&#34;&gt;Où en est-on ?&lt;/h2&gt;
+
+&lt;p&gt;Je peux créer un site en rédigeant mes posts en markdown, avec un thème minimaliste et je peux prévisualiser le résultat dans mon navigateur.&lt;/p&gt;
 </description>
         </item>
       
