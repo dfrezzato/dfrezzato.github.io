@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>notepad </title>
-    <link>http://localhost:1313/post/</link>
+    <link>http://alea.io/post/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>mise en place</title>
-          <link>http://localhost:1313/post/hugo_github/</link>
+          <link>http://alea.io/post/hugo_github/</link>
           <pubDate>Sun, 07 Feb 2016 15:02:19 CET</pubDate>
           <author></author>
-          <guid>http://localhost:1313/post/hugo_github/</guid>
+          <guid>http://alea.io/post/hugo_github/</guid>
           <description>
 
 &lt;h2 id=&#34;hugo:3b6eaebee660f5e91c409f85d4ddd0a9&#34;&gt;Hugo&lt;/h2&gt;
@@ -23,6 +23,11 @@
 &lt;p&gt;Hugo est un programme de génération de site statique qui permet de transformer aisément des fichiers markdown en site web.&lt;/p&gt;
 
 &lt;h2 id=&#34;configuration:3b6eaebee660f5e91c409f85d4ddd0a9&#34;&gt;Configuration&lt;/h2&gt;
+
+&lt;p&gt;Pour connaître l&amp;rsquo;architecture du système :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ uname -i
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Récupérer &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;hugo&lt;/a&gt; et suivre les instructions d&amp;rsquo;installation (c&amp;rsquo;est en fait un fichier binaire, il n&amp;rsquo;y a pas de réelle installation).&lt;/p&gt;
 
@@ -33,7 +38,7 @@
 
 &lt;p&gt;crée un répertoire &lt;nom du site&gt; qui contient une structure prédéfinie destinée à être transformée par Hugo en site web.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$ cd &amp;lt;nom du site&amp;gt;
+&lt;pre&gt;&lt;code&gt;$ cd &amp;lt;nom du site&amp;gt;/post/
 $ mkdir themes
 &lt;/code&gt;&lt;/pre&gt;
 
