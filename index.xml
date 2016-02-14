@@ -6,8 +6,49 @@
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
-    <updated>2016-02-07 15:02:19 &#43;0100 CET</updated>
+    <updated>2016-02-14 20:55:03 &#43;0100 CET</updated>
 
+    
+      
+        <item>
+          <title>hugo, highlight.js et d3.js</title>
+          <link>http://alea.io/post/hugo_js/</link>
+          <pubDate>Sun, 14 Feb 2016 20:55:03 CET</pubDate>
+          <author></author>
+          <guid>http://alea.io/post/hugo_js/</guid>
+          <description>
+
+&lt;h2 id=&#34;highlight-js-à-partir-d-un-cdn-i-e-content-delivery-network:9f3719ccf3e885b3da2283a27c8547cb&#34;&gt;Highlight.js (à partir d&amp;rsquo;un cdn i.e. &lt;em&gt;content delivery network&lt;/em&gt;)&lt;/h2&gt;
+
+&lt;p&gt;Pour pouvoir activer la coloration syntaxique pour le thème Lanyon, on peut inclure dans le &lt;code&gt;header&lt;/code&gt; les chemins vers les scripts (entre les balises &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; et &lt;code&gt;&amp;lt;/head&amp;gt;&lt;/code&gt;):&lt;/p&gt;
+
+&lt;p&gt;dans &lt;code&gt;&amp;lt;dossier du site&amp;gt;/themes/lanyon-hugo/partials/head.html&lt;/code&gt;, insérer :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css&amp;quot;&amp;gt;
+
+&amp;lt;script src=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+
+&amp;lt;script&amp;gt;hljs.initHighlightingOnLoad();&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;On peut maintenant tester que cela fonctionne en entrant :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import numpy as np
+import pandas
+
+for i in range(10):
+  print(i)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;d3-js-à-partir-d-un-cdn:9f3719ccf3e885b3da2283a27c8547cb&#34;&gt;D3.js (à partir d&amp;rsquo;un cdn)&lt;/h2&gt;
+
+&lt;p&gt;De la même façon, il faut indiquer dans &lt;code&gt;head.html&lt;/code&gt; (le même fichier que dans la section précédente) :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;script src=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.14/d3.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        </item>
+      
     
       
         <item>
