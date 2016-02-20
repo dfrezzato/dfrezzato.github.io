@@ -59,8 +59,6 @@
       
     
       
-        <a class="sidebar-nav-item " href="http://alea.io/post/hugo_js/">hugo, highlight.js et d3.js</a>
-      
     
 
     
@@ -188,6 +186,42 @@ weight = 10
     </div>
   
     <div class="post">
+        <h1 class="post-title"><a href="http://alea.io/post/hugo_js/">hugo, highlight.js et d3.js</a></h1>
+        <span class="post-date">Feb 14 2016</span>
+        
+
+<h2 id="highlight-js-à-partir-d-un-cdn-i-e-content-delivery-network:9f3719ccf3e885b3da2283a27c8547cb">Highlight.js (à partir d&rsquo;un cdn i.e. <em>content delivery network</em>)</h2>
+
+<p>Pour pouvoir activer la coloration syntaxique pour le thème Lanyon, on peut inclure dans le <code>header</code> les chemins vers les scripts (entre les balises <code>&lt;head&gt;</code> et <code>&lt;/head&gt;</code>):</p>
+
+<p>dans <code>&lt;dossier du site&gt;/themes/lanyon-hugo/partials/head.html</code>, insérer :</p>
+
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css&quot;&gt;
+
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+</code></pre>
+
+<p>On peut maintenant tester que cela fonctionne en entrant :</p>
+
+<pre><code class="language-python">import numpy as np
+import pandas
+
+for i in range(10):
+  print(i)
+</code></pre>
+
+<h2 id="d3-js-à-partir-d-un-cdn:9f3719ccf3e885b3da2283a27c8547cb">D3.js (à partir d&rsquo;un cdn)</h2>
+
+<p>De la même façon, il faut indiquer dans <code>head.html</code> (le même fichier que dans la section précédente) :</p>
+
+<pre><code class="language-html">&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.14/d3.min.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+    </div>
+  
+    <div class="post">
         <h1 class="post-title"><a href="http://alea.io/post/hugo_github/">mise en place</a></h1>
         <span class="post-date">Feb 7 2016</span>
         
@@ -271,42 +305,6 @@ title = &quot;titre du post qui sera affiché dans le site&quot;
 <h2 id="où-en-est-on:3b6eaebee660f5e91c409f85d4ddd0a9">Où en est-on ?</h2>
 
 <p>Je peux créer un site en rédigeant mes posts en markdown, avec un thème minimaliste et je peux prévisualiser le résultat dans mon navigateur.</p>
-
-    </div>
-  
-    <div class="post">
-        <h1 class="post-title"><a href="http://alea.io/post/hugo_js/">hugo, highlight.js et d3.js</a></h1>
-        <span class="post-date">Feb 14 2016</span>
-        
-
-<h2 id="highlight-js-à-partir-d-un-cdn-i-e-content-delivery-network:9f3719ccf3e885b3da2283a27c8547cb">Highlight.js (à partir d&rsquo;un cdn i.e. <em>content delivery network</em>)</h2>
-
-<p>Pour pouvoir activer la coloration syntaxique pour le thème Lanyon, on peut inclure dans le <code>header</code> les chemins vers les scripts (entre les balises <code>&lt;head&gt;</code> et <code>&lt;/head&gt;</code>):</p>
-
-<p>dans <code>&lt;dossier du site&gt;/themes/lanyon-hugo/partials/head.html</code>, insérer :</p>
-
-<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css&quot;&gt;
-
-&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js&quot;&gt;&lt;/script&gt;
-
-&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
-</code></pre>
-
-<p>On peut maintenant tester que cela fonctionne en entrant :</p>
-
-<pre><code class="language-python">import numpy as np
-import pandas
-
-for i in range(10):
-  print(i)
-</code></pre>
-
-<h2 id="d3-js-à-partir-d-un-cdn:9f3719ccf3e885b3da2283a27c8547cb">D3.js (à partir d&rsquo;un cdn)</h2>
-
-<p>De la même façon, il faut indiquer dans <code>head.html</code> (le même fichier que dans la section précédente) :</p>
-
-<pre><code class="language-html">&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.14/d3.min.js&quot;&gt;&lt;/script&gt;
-</code></pre>
 
     </div>
   
