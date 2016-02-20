@@ -10,7 +10,7 @@
 
   <title>
     
-      favicon, sidebar &middot; FWD&gt;&gt;FunWithData
+      google analytics &middot; FWD&gt;&gt;FunWithData
     
   </title>
 
@@ -87,35 +87,34 @@
 
 
 <div class="post">
-  <h1 class="post-title">favicon, sidebar</h1>
+  <h1 class="post-title">google analytics</h1>
   <span class="post-date">Feb 20 2016</span>
   
 
-<h2 id="créer-une-favicon:2e53a4e69a27fda7e54c1327844b6488">Créer une favicon</h2>
+<h2 id="script-à-intégrer:288ba409f9a55331bb5f73a5d76acac0">Script à intégrer</h2>
 
-<p>Si on n&rsquo;est pas <em>designer</em> ou graphiste, il vaut mieux utiliser un site de génération automatique : <a href="http://antifavicon.com/">site générateur de favicon</a></p>
+<p>sur le site de Google analytics, il faut inscrire son nom de domaine, puis copier le script indiqué dans un <em>template</em> :
+<code>themes/lanyon-hugo/layouts/partials/google_analytics.html</code></p>
 
-<h2 id="modifier-le-texte-à-côté-de-la-favicon:2e53a4e69a27fda7e54c1327844b6488">Modifier le texte à côté de la favicon</h2>
+<pre><code class="language-javascript">&lt;script&gt;
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<p>Il suffit d&rsquo;indiquer le paramètre du site qui contient le titre i.e. <code>Title</code>.</p>
+  ga('create', 'UA-XXXXXXX-1', 'auto');
+  ga('send', 'pageview');
 
-<p>dans <code>&lt;dossier du site&gt;/config.toml</code>, insérer dans la section <code>Params</code>:</p>
-
-<pre><code>[Params]
-	Title=&quot;le nouveau titre&quot;
+&lt;/script&gt;
 </code></pre>
 
-<h2 id="mettre-le-lien-vers-un-post-dans-la-sidebar:2e53a4e69a27fda7e54c1327844b6488">Mettre le lien vers un post dans la sidebar</h2>
+<h2 id="template:288ba409f9a55331bb5f73a5d76acac0">Template</h2>
 
-<p>Ajouter dans l&rsquo;entête de l&rsquo;article <code>sidebar = true</code> et <code>weight = 10</code> qui indique la position relative des liens de la sidebar (le plus lourd tombe au fond)</p>
+<p>Il faut maintenant mettre une référence vers ce <em>template</em> dans le <em>template</em> de la page qui devra contenir le script google analytics :</p>
 
-<pre><code>+++
-date = &quot;2016-02-20&quot;
-draft = false
-title = &quot;favicon, sidebar&quot;
-sidebar = true
-weight = 10
-+++
+<p>dans le fichier <code>themes/lanyon-hugo/layouts/_default/single.html</code>, ajouter :</p>
+
+<pre><code>{{ partial &quot;google_analytics.html&quot; . }}
 </code></pre>
 
 </div>

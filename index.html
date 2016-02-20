@@ -60,6 +60,8 @@
     
       
     
+      
+    
 
     
   </nav>
@@ -119,6 +121,39 @@ title = &quot;favicon, sidebar&quot;
 sidebar = true
 weight = 10
 +++
+</code></pre>
+
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://alea.io/post/hugo_google_analytics/">google analytics</a></h1>
+        <span class="post-date">Feb 20 2016</span>
+        
+
+<h2 id="script-à-intégrer:288ba409f9a55331bb5f73a5d76acac0">Script à intégrer</h2>
+
+<p>sur le site de Google analytics, il faut inscrire son nom de domaine, puis copier le script indiqué dans un <em>template</em> :
+<code>themes/lanyon-hugo/layouts/partials/google_analytics.html</code></p>
+
+<pre><code class="language-javascript">&lt;script&gt;
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-XXXXXXX-1', 'auto');
+  ga('send', 'pageview');
+
+&lt;/script&gt;
+</code></pre>
+
+<h2 id="template:288ba409f9a55331bb5f73a5d76acac0">Template</h2>
+
+<p>Il faut maintenant mettre une référence vers ce <em>template</em> dans le <em>template</em> de la page qui devra contenir le script google analytics :</p>
+
+<p>dans le fichier <code>themes/lanyon-hugo/layouts/_default/single.html</code>, ajouter :</p>
+
+<pre><code>{{ partial &quot;google_analytics.html&quot; . }}
 </code></pre>
 
     </div>
