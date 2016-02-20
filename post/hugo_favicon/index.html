@@ -10,7 +10,7 @@
 
   <title>
     
-      Posts &middot; FWD&gt;&gt;FunWithData
+      favicon, sidebar &middot; FWD&gt;&gt;FunWithData
     
   </title>
 
@@ -48,7 +48,7 @@
 
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item " href="/">Home</a>
-    <a class="sidebar-nav-item  active " href="/post">Posts</a>
+    <a class="sidebar-nav-item " href="/post">Posts</a>
 
     
     
@@ -87,23 +87,56 @@
 
 
 <div class="post">
-  <h1 class="post-title">Posts</h1>
-  <ul id="list">
-      
-        <li>Feb 20 2016 - <a href="http://alea.io/post/hugo_favicon/">favicon, sidebar</a></li>
+  <h1 class="post-title">favicon, sidebar</h1>
+  <span class="post-date">Feb 20 2016</span>
+  
 
-      
-        <li>Feb 17 2016 - <a href="http://alea.io/post/disqus/">Ajouter des commentaires via disqus</a></li>
+<h2 id="créer-une-favicon:2e53a4e69a27fda7e54c1327844b6488">Créer une favicon</h2>
 
-      
-        <li>Feb 7 2016 - <a href="http://alea.io/post/hugo_github/">mise en place</a></li>
+<p>Si on n&rsquo;est pas <em>designer</em> ou graphiste, il vaut mieux utiliser un site de génération automatique : <a href="http://antifavicon.com/">site générateur de favicon</a></p>
 
-      
-        <li>Feb 14 2016 - <a href="http://alea.io/post/hugo_js/">hugo, highlight.js et d3.js</a></li>
+<h2 id="modifier-le-texte-à-côté-de-la-favicon:2e53a4e69a27fda7e54c1327844b6488">Modifier le texte à côté de la favicon</h2>
 
-      
-  </ul>
+<p>Il suffit d&rsquo;indiquer le paramètre du site qui contient le titre i.e. <code>Title</code>.</p>
+
+<p>dans <code>&lt;dossier du site&gt;/config.toml</code>, insérer dans la section <code>Params</code>:</p>
+
+<pre><code>[Params]
+	Title=&quot;le nouveau titre&quot;
+</code></pre>
+
+<h2 id="mettre-le-lien-vers-un-post-dans-la-sidebar:2e53a4e69a27fda7e54c1327844b6488">Mettre le lien vers un post dans la sidebar</h2>
+
+<p>Ajouter dans l&rsquo;entête de l&rsquo;article <code>sidebar = true</code> et <code>weight = 10</code> qui indique la position relative des liens de la sidebar (le plus lourd tombe au fond)</p>
+
+<pre><code>+++
+date = &quot;2016-02-20&quot;
+draft = false
+title = &quot;favicon, sidebar&quot;
+sidebar = true
+weight = 10
++++
+</code></pre>
+
 </div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'aleaio';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
       </div>
     </div>

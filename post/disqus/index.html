@@ -10,7 +10,7 @@
 
   <title>
     
-      hugo, highlight.js et d3.js &middot; FWD&gt;&gt;FunWithData
+      Ajouter des commentaires via disqus &middot; FWD&gt;&gt;FunWithData
     
   </title>
 
@@ -59,7 +59,7 @@
       
     
       
-        <a class="sidebar-nav-item  active " href="http://alea.io/post/hugo_js/">hugo, highlight.js et d3.js</a>
+        <a class="sidebar-nav-item " href="http://alea.io/post/hugo_js/">hugo, highlight.js et d3.js</a>
       
     
 
@@ -87,37 +87,63 @@
 
 
 <div class="post">
-  <h1 class="post-title">hugo, highlight.js et d3.js</h1>
-  <span class="post-date">Feb 14 2016</span>
+  <h1 class="post-title">Ajouter des commentaires via disqus</h1>
+  <span class="post-date">Feb 17 2016</span>
   
 
-<h2 id="highlight-js-à-partir-d-un-cdn-i-e-content-delivery-network:9f3719ccf3e885b3da2283a27c8547cb">Highlight.js (à partir d&rsquo;un cdn i.e. <em>content delivery network</em>)</h2>
+<h2 id="script-de-configuration:bf318b8a60a617bf47277af43375fb12">Script de configuration</h2>
 
-<p>Pour pouvoir activer la coloration syntaxique pour le thème Lanyon, on peut inclure dans le <code>header</code> les chemins vers les scripts (entre les balises <code>&lt;head&gt;</code> et <code>&lt;/head&gt;</code>):</p>
+<p>Pour permettre le chargement de la zone de commentaires créée par <a href="https://disqus.com/">disqus</a>, il faut créer un <em>template</em> en créant le fichier : <code>themes/lanyon-hugo/layouts/partials/disqus.html</code>.</p>
 
-<p>dans <code>&lt;dossier du site&gt;/themes/lanyon-hugo/partials/head.html</code>, insérer :</p>
+<p>Ce fichier doit contenir le code suivant (code récupéré sur le site de hugo). Le code est spécifique pour permettre le chargement des commentaires, uniquement si le serveur ne tourne pas sur localhost.</p>
 
-<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css&quot;&gt;
+<pre><code class="language-javascript">&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
 
-&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js&quot;&gt;&lt;/script&gt;
+(function() {
+    // Don't ever inject Disqus on localhost--it creates unwanted
+    // discussions from 'localhost:1313' on your Disqus account...
+    if (window.location.hostname == &quot;localhost&quot;)
+        return;
 
-&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = '{{ .Site.DisqusShortname }}';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+&lt;/script&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;http://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+&lt;a href=&quot;http://disqus.com/&quot; class=&quot;dsq-brlink&quot;&gt;comments powered by &lt;span class=&quot;logo-disqus&quot;&gt;Disqus&lt;/span&gt;&lt;/a&gt;
 </code></pre>
 
-<p>On peut maintenant tester que cela fonctionne en entrant :</p>
+<h2 id="template:bf318b8a60a617bf47277af43375fb12">Template</h2>
 
-<pre><code class="language-python">import numpy as np
-import pandas
+<p>Il faut maintenant mettre une référence vers ce <em>template</em> dans le <em>template</em> de la page qui devra contenir la zone disqus :</p>
 
-for i in range(10):
-  print(i)
+<p>dans le fichier <code>themes/lanyon-hugo/layouts/_default/single.html</code>, ajouter :</p>
+
+<pre><code>{{ partial &quot;disqus.html&quot; . }}
 </code></pre>
 
-<h2 id="d3-js-à-partir-d-un-cdn:9f3719ccf3e885b3da2283a27c8547cb">D3.js (à partir d&rsquo;un cdn)</h2>
+<p>de telle sorte que le contenu soit :</p>
 
-<p>De la même façon, il faut indiquer dans <code>head.html</code> (le même fichier que dans la section précédente) :</p>
+<pre><code class="language-html">{{ partial &quot;default_head.html&quot; . }}
 
-<pre><code class="language-html">&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.14/d3.min.js&quot;&gt;&lt;/script&gt;
+&lt;div class=&quot;post&quot;&gt;
+  &lt;h1 class=&quot;post-title&quot;&gt;{{ .Title }}&lt;/h1&gt;
+  &lt;span class=&quot;post-date&quot;&gt;{{ .Date.Format .Site.Params.DateForm }}&lt;/span&gt;
+  {{ .Content }}
+&lt;/div&gt;
+
+{{ partial &quot;disqus.html&quot; . }}
+{{ partial &quot;default_foot.html&quot; . }}
+</code></pre>
+
+<h2 id="disqusshortname:bf318b8a60a617bf47277af43375fb12">disqusShortname</h2>
+
+<p>Enfin, ajouter aux paramètres du site, dans le fichier <code>config.toml</code></p>
+
+<pre><code>disqusShortname = &quot;le_nom_indique_par_disqus lors de l'inscription du disqus&quot;
 </code></pre>
 
 </div>

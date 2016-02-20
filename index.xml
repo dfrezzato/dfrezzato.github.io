@@ -6,45 +6,110 @@
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
-    <updated>2016-02-14 20:55:03 &#43;0100 CET</updated>
+    <updated>2016-02-20 00:00:00 &#43;0000 UTC</updated>
 
     
       
         <item>
-          <title>hugo, highlight.js et d3.js</title>
-          <link>http://alea.io/post/hugo_js/</link>
-          <pubDate>Sun, 14 Feb 2016 20:55:03 CET</pubDate>
+          <title>favicon, sidebar</title>
+          <link>http://alea.io/post/hugo_favicon/</link>
+          <pubDate>Sat, 20 Feb 2016 00:00:00 UTC</pubDate>
           <author></author>
-          <guid>http://alea.io/post/hugo_js/</guid>
+          <guid>http://alea.io/post/hugo_favicon/</guid>
           <description>
 
-&lt;h2 id=&#34;highlight-js-à-partir-d-un-cdn-i-e-content-delivery-network:9f3719ccf3e885b3da2283a27c8547cb&#34;&gt;Highlight.js (à partir d&amp;rsquo;un cdn i.e. &lt;em&gt;content delivery network&lt;/em&gt;)&lt;/h2&gt;
+&lt;h2 id=&#34;créer-une-favicon:2e53a4e69a27fda7e54c1327844b6488&#34;&gt;Créer une favicon&lt;/h2&gt;
 
-&lt;p&gt;Pour pouvoir activer la coloration syntaxique pour le thème Lanyon, on peut inclure dans le &lt;code&gt;header&lt;/code&gt; les chemins vers les scripts (entre les balises &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; et &lt;code&gt;&amp;lt;/head&amp;gt;&lt;/code&gt;):&lt;/p&gt;
+&lt;p&gt;Si on n&amp;rsquo;est pas &lt;em&gt;designer&lt;/em&gt; ou graphiste, il vaut mieux utiliser un site de génération automatique : &lt;a href=&#34;http://antifavicon.com/&#34;&gt;site générateur de favicon&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;dans &lt;code&gt;&amp;lt;dossier du site&amp;gt;/themes/lanyon-hugo/partials/head.html&lt;/code&gt;, insérer :&lt;/p&gt;
+&lt;h2 id=&#34;modifier-le-texte-à-côté-de-la-favicon:2e53a4e69a27fda7e54c1327844b6488&#34;&gt;Modifier le texte à côté de la favicon&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css&amp;quot;&amp;gt;
+&lt;p&gt;Il suffit d&amp;rsquo;indiquer le paramètre du site qui contient le titre i.e. &lt;code&gt;Title&lt;/code&gt;.&lt;/p&gt;
 
-&amp;lt;script src=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;p&gt;dans &lt;code&gt;&amp;lt;dossier du site&amp;gt;/config.toml&lt;/code&gt;, insérer dans la section &lt;code&gt;Params&lt;/code&gt;:&lt;/p&gt;
 
-&amp;lt;script&amp;gt;hljs.initHighlightingOnLoad();&amp;lt;/script&amp;gt;
+&lt;pre&gt;&lt;code&gt;[Params]
+	Title=&amp;quot;le nouveau titre&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;On peut maintenant tester que cela fonctionne en entrant :&lt;/p&gt;
+&lt;h2 id=&#34;mettre-le-lien-vers-un-post-dans-la-sidebar:2e53a4e69a27fda7e54c1327844b6488&#34;&gt;Mettre le lien vers un post dans la sidebar&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import numpy as np
-import pandas
+&lt;p&gt;Ajouter dans l&amp;rsquo;entête de l&amp;rsquo;article &lt;code&gt;sidebar = true&lt;/code&gt; et &lt;code&gt;weight = 10&lt;/code&gt; qui indique la position relative des liens de la sidebar (le plus lourd tombe au fond)&lt;/p&gt;
 
-for i in range(10):
-  print(i)
+&lt;pre&gt;&lt;code&gt;+++
+date = &amp;quot;2016-02-20&amp;quot;
+draft = false
+title = &amp;quot;favicon, sidebar&amp;quot;
+sidebar = true
+weight = 10
++++
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ajouter des commentaires via disqus</title>
+          <link>http://alea.io/post/disqus/</link>
+          <pubDate>Wed, 17 Feb 2016 00:00:00 UTC</pubDate>
+          <author></author>
+          <guid>http://alea.io/post/disqus/</guid>
+          <description>
+
+&lt;h2 id=&#34;script-de-configuration:bf318b8a60a617bf47277af43375fb12&#34;&gt;Script de configuration&lt;/h2&gt;
+
+&lt;p&gt;Pour permettre le chargement de la zone de commentaires créée par &lt;a href=&#34;https://disqus.com/&#34;&gt;disqus&lt;/a&gt;, il faut créer un &lt;em&gt;template&lt;/em&gt; en créant le fichier : &lt;code&gt;themes/lanyon-hugo/layouts/partials/disqus.html&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ce fichier doit contenir le code suivant (code récupéré sur le site de hugo). Le code est spécifique pour permettre le chargement des commentaires, uniquement si le serveur ne tourne pas sur localhost.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;&amp;lt;div id=&amp;quot;disqus_thread&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+
+(function() {
+    // Don&#39;t ever inject Disqus on localhost--it creates unwanted
+    // discussions from &#39;localhost:1313&#39; on your Disqus account...
+    if (window.location.hostname == &amp;quot;localhost&amp;quot;)
+        return;
+
+    var dsq = document.createElement(&#39;script&#39;); dsq.type = &#39;text/javascript&#39;; dsq.async = true;
+    var disqus_shortname = &#39;{{ .Site.DisqusShortname }}&#39;;
+    dsq.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/embed.js&#39;;
+    (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(dsq);
+})();
+&amp;lt;/script&amp;gt;
+&amp;lt;noscript&amp;gt;Please enable JavaScript to view the &amp;lt;a href=&amp;quot;http://disqus.com/?ref_noscript&amp;quot;&amp;gt;comments powered by Disqus.&amp;lt;/a&amp;gt;&amp;lt;/noscript&amp;gt;
+&amp;lt;a href=&amp;quot;http://disqus.com/&amp;quot; class=&amp;quot;dsq-brlink&amp;quot;&amp;gt;comments powered by &amp;lt;span class=&amp;quot;logo-disqus&amp;quot;&amp;gt;Disqus&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;d3-js-à-partir-d-un-cdn:9f3719ccf3e885b3da2283a27c8547cb&#34;&gt;D3.js (à partir d&amp;rsquo;un cdn)&lt;/h2&gt;
+&lt;h2 id=&#34;template:bf318b8a60a617bf47277af43375fb12&#34;&gt;Template&lt;/h2&gt;
 
-&lt;p&gt;De la même façon, il faut indiquer dans &lt;code&gt;head.html&lt;/code&gt; (le même fichier que dans la section précédente) :&lt;/p&gt;
+&lt;p&gt;Il faut maintenant mettre une référence vers ce &lt;em&gt;template&lt;/em&gt; dans le &lt;em&gt;template&lt;/em&gt; de la page qui devra contenir la zone disqus :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;script src=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.14/d3.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;p&gt;dans le fichier &lt;code&gt;themes/lanyon-hugo/layouts/_default/single.html&lt;/code&gt;, ajouter :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{{ partial &amp;quot;disqus.html&amp;quot; . }}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;de telle sorte que le contenu soit :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;{{ partial &amp;quot;default_head.html&amp;quot; . }}
+
+&amp;lt;div class=&amp;quot;post&amp;quot;&amp;gt;
+  &amp;lt;h1 class=&amp;quot;post-title&amp;quot;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt;
+  &amp;lt;span class=&amp;quot;post-date&amp;quot;&amp;gt;{{ .Date.Format .Site.Params.DateForm }}&amp;lt;/span&amp;gt;
+  {{ .Content }}
+&amp;lt;/div&amp;gt;
+
+{{ partial &amp;quot;disqus.html&amp;quot; . }}
+{{ partial &amp;quot;default_foot.html&amp;quot; . }}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;disqusshortname:bf318b8a60a617bf47277af43375fb12&#34;&gt;disqusShortname&lt;/h2&gt;
+
+&lt;p&gt;Enfin, ajouter aux paramètres du site, dans le fichier &lt;code&gt;config.toml&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;disqusShortname = &amp;quot;le_nom_indique_par_disqus lors de l&#39;inscription du disqus&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 </description>
         </item>
@@ -138,6 +203,47 @@ title = &amp;quot;titre du post qui sera affiché dans le site&amp;quot;
 &lt;h2 id=&#34;où-en-est-on:3b6eaebee660f5e91c409f85d4ddd0a9&#34;&gt;Où en est-on ?&lt;/h2&gt;
 
 &lt;p&gt;Je peux créer un site en rédigeant mes posts en markdown, avec un thème minimaliste et je peux prévisualiser le résultat dans mon navigateur.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>hugo, highlight.js et d3.js</title>
+          <link>http://alea.io/post/hugo_js/</link>
+          <pubDate>Sun, 14 Feb 2016 20:55:03 CET</pubDate>
+          <author></author>
+          <guid>http://alea.io/post/hugo_js/</guid>
+          <description>
+
+&lt;h2 id=&#34;highlight-js-à-partir-d-un-cdn-i-e-content-delivery-network:9f3719ccf3e885b3da2283a27c8547cb&#34;&gt;Highlight.js (à partir d&amp;rsquo;un cdn i.e. &lt;em&gt;content delivery network&lt;/em&gt;)&lt;/h2&gt;
+
+&lt;p&gt;Pour pouvoir activer la coloration syntaxique pour le thème Lanyon, on peut inclure dans le &lt;code&gt;header&lt;/code&gt; les chemins vers les scripts (entre les balises &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; et &lt;code&gt;&amp;lt;/head&amp;gt;&lt;/code&gt;):&lt;/p&gt;
+
+&lt;p&gt;dans &lt;code&gt;&amp;lt;dossier du site&amp;gt;/themes/lanyon-hugo/partials/head.html&lt;/code&gt;, insérer :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css&amp;quot;&amp;gt;
+
+&amp;lt;script src=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+
+&amp;lt;script&amp;gt;hljs.initHighlightingOnLoad();&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;On peut maintenant tester que cela fonctionne en entrant :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import numpy as np
+import pandas
+
+for i in range(10):
+  print(i)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;d3-js-à-partir-d-un-cdn:9f3719ccf3e885b3da2283a27c8547cb&#34;&gt;D3.js (à partir d&amp;rsquo;un cdn)&lt;/h2&gt;
+
+&lt;p&gt;De la même façon, il faut indiquer dans &lt;code&gt;head.html&lt;/code&gt; (le même fichier que dans la section précédente) :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;script src=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.14/d3.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 </description>
         </item>
       
