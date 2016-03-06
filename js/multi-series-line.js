@@ -3,38 +3,38 @@
 *************************************************/
 
 /***********************************************************************************************************************|
-|*******************************GGVie - Modification apportée au script d3.js*******************************************|
+|******************************* - Modification apportée au script d3.js*******************************************|
 |************************On crée une fonction paramétrée pour facilement manipuler le graphique.************************|
 ************************************************************************************************************************/
 
 function msl(IdClass, CsvData, ylabel, LeftValue){
 
-	/***GGVIE : Read csv data and create a array of json objects for function nvd3Linegraph***/
+	/***Ajustement exemple : Read csv data and create a array of json objects for function nvd3Linegraph***/
 	d3.csv(CsvData,function(err,data){
-		/***GGVIE : Recovering csv data in variable "data"***/
+		/***Ajustement exemple : Recovering csv data in variable "data"***/
 		/*These lines are all chart setup.  Pick and choose which chart features you want to utilize. */
-		/***GGVIE :  Constructs a range of twenty categorical colors***/
+		/***Ajustement exemple :  Constructs a range of twenty categorical colors***/
 		/***Color is empty***/
 		var color = d3.scale.category20();
 
 		var dataToPlot = Object.keys(data[0]).filter(function(k){return k!="time"})
-			/***GGVIE : Recovering columns names (keys) in array and map a function to each keys element..***/
+			/***Ajustement exemple : Recovering columns names (keys) in array and map a function to each keys element..***/
 			.map(function(k){
 				return {"key":k,
 							"values":data.map(function(d){return {"x":+d.time, "y":+d[k]}}),
 							"color": color(k)}
 		 });
-		 /***GGVIE : La fonction mappée retourne un objet json où "key" contient le nom de la colonne (la clé), "values" contient
+		 /***Ajustement exemple : La fonction mappée retourne un objet json où "key" contient le nom de la colonne (la clé), "values" contient
 			des objets de la forme souhaitée pour chaque clé et donc commestible pour la fonction nv.addGraph de nvd3, et "color"
 			contient automatiquement la valeur hexadécimale des couleurs par ordre croissant de la fonction d3.scale.category20().***/
 
-		/***GGVIE : Call new function nvd3Linegraph***/
+		/***Ajustement exemple : Call new function nvd3Linegraph***/
 		nvd3Linegraph(IdClass, dataToPlot, ylabel, LeftValue);
 		console.log(dataToPlot);
 	})
 
 
-	/***GGVIE : Creating a parametric function for nvd3 function "nv.addGraph"***/
+	/***Ajustement exemple : Creating a parametric function for nvd3 function "nv.addGraph"***/
 	function nvd3Linegraph(IdClass, PlotData, ylabel, LeftValue){
 		nv.addGraph(function() {
 		  var chart = nv.models.lineChart()

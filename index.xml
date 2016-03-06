@@ -6,8 +6,119 @@
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
-    <updated>2016-02-20 00:00:00 &#43;0000 UTC</updated>
+    <updated>2016-03-07 00:00:00 &#43;0000 UTC</updated>
 
+    
+      
+        <item>
+          <title>Graphique simple nvd3</title>
+          <link>http://alea.io/post/premier_nvd3/</link>
+          <pubDate>Mon, 07 Mar 2016 00:00:00 UTC</pubDate>
+          <author></author>
+          <guid>http://alea.io/post/premier_nvd3/</guid>
+          <description>
+
+&lt;p&gt;Lorsqu&amp;rsquo;on souhaite illustrer graphiquement le contenu d&amp;rsquo;un fichier de données, faire de la &lt;em&gt;data visualisation&lt;/em&gt;, on pourra s&amp;rsquo;appuyer sur des bibliothèques javascript. La principale est d3.js. Pour une mise en oeuvre plus aisée (mais plus limitée), on peut déjà bien s&amp;rsquo;amuser avec nvd3.&lt;/p&gt;
+
+&lt;h2 id=&#34;nvd3:2f6284593b2a6d0b98606de1c5b5b907&#34;&gt;nvd3&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://nvd3.org/&#34;&gt;nvd3&lt;/a&gt; est une bibliothèque javascript de visualisation basée sur &lt;a href=&#34;https://d3js.org/&#34;&gt;d3.js&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Pour pouvoir utiliser &lt;a href=&#34;http://nvd3.org/&#34;&gt;nvd3&lt;/a&gt;, il faut récupérer le css et le javascript sur le &lt;a href=&#34;https://github.com/novus/nvd3&#34;&gt;dépôt github nvd3&lt;/a&gt; puis les mettre respectivement dans :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;&amp;lt;dossier du site&amp;gt;/themes/lanyon-hugo/static/css/nv.d3.min.css&lt;/code&gt; et&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;&amp;lt;dossier du site&amp;gt;/themes/lanyon-hugo/static/js/nv.d3.min.js&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ensuite, dans &lt;code&gt;&amp;lt;dossier du site&amp;gt;/themes/lanyon-hugo/partials/head.html&lt;/code&gt;, insérer :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;link href=&amp;quot;/css/nv.d3.min.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;
+&amp;lt;script src=&amp;quot;/js/nv.d3.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Pour construire mon exemple, j&amp;rsquo;ai aussi inséré la référence du javascript que j&amp;rsquo;ai créé pour l&amp;rsquo;occasion :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;script src=&amp;quot;/js/multi-series-line.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Attention :&lt;/strong&gt; Les exemples du site &lt;a href=&#34;http://nvd3.org/&#34;&gt;nvd3&lt;/a&gt; ne fonctionnent pas avec la version du projet qui est sur github, il faut donc récupérer les exemples sur github et les adapter pour son propre usage.&lt;/p&gt;
+
+&lt;p&gt;En général, l&amp;rsquo;exemple disponible n&amp;rsquo;est pas utilisable directement : il faut adapter les données en entrée pour les mettre dans le format attendu par le script.&lt;/p&gt;
+
+&lt;p&gt;On peut tester que cela fonctionne en faisant un premier graphique.&lt;/p&gt;
+
+&lt;h1 id=&#34;premier-graphique:2f6284593b2a6d0b98606de1c5b5b907&#34;&gt;premier graphique&lt;/h1&gt;
+
+&lt;p&gt;Voici les &lt;a href=&#34;http://alea.io/assets/data-multiserieslines.csv&#34;&gt;Données source&lt;/a&gt;, ainsi que le &lt;a href=&#34;http://alea.io/js/multi-series-line.js&#34;&gt;Script&lt;/a&gt; exemple adapté aux données sources.&lt;/p&gt;
+
+&lt;div id=&#34;multi-series-line&#34;&gt;
+&lt;svg width=&#34;100%&#34; height=&#34;400px&#34;&gt;&lt;/svg&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    msl(&#39;#multi-series-line svg&#39;, &#39;/assets/data-multiserieslines.csv&#39;, &#39;Montant&#39;, 100);
+&lt;/script&gt;
+
+&lt;h1 id=&#34;explications:2f6284593b2a6d0b98606de1c5b5b907&#34;&gt;explications&lt;/h1&gt;
+
+&lt;p&gt;Pour mettre le graphique dans la page, j&amp;rsquo;ai inséré les lignes suivantes dans mon post :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div id=&amp;quot;multi-series-line&amp;quot;&amp;gt;
+&amp;lt;svg width=&amp;quot;100%&amp;quot; height=&amp;quot;400px&amp;quot;&amp;gt;&amp;lt;/svg&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;script&amp;gt;
+	msl(&#39;#multi-series-line svg&#39;, &#39;/assets/data-multiserieslines.csv&#39;, &#39;Montant&#39;, 100);
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;L&amp;rsquo;exemple disponible sur le site &lt;a href=&#34;http://nvd3.org/&#34;&gt;nvd3&lt;/a&gt; a été adapté. Il comportait le code suivant :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt; /*These lines are all chart setup.  Pick and choose which chart features you want to utilize. */
+ nv.addGraph(function() {
+   var chart = nv.models.lineChart()
+                 .margin({left: 100})  //Adjust chart margins to give the x-axis some breathing room.
+                 .useInteractiveGuideline(true)  //We want nice looking tooltips and a guideline!
+                 .transitionDuration(350)  //how fast do you want the lines to transition?
+                 .showLegend(true)       //Show the legend, allowing users to turn on/off line series.
+                 .showYAxis(true)        //Show the y-axis
+                 .showXAxis(true)        //Show the x-axis
+   ;
+
+   chart.xAxis     //Chart x-axis settings
+       .axisLabel(&#39;Time (ms)&#39;)
+       .tickFormat(d3.format(&#39;,r&#39;));
+
+   chart.yAxis     //Chart y-axis settings
+       .axisLabel(&#39;Voltage (v)&#39;)
+       .tickFormat(d3.format(&#39;.02f&#39;));
+
+   /* Done setting the chart up? Time to render it!*/
+   var myData = sinAndCos();   //You need data...
+
+   d3.select(&#39;#chart svg&#39;)    //Select the &amp;lt;svg&amp;gt; element you want to render the chart in.   
+       .datum(myData)         //Populate the &amp;lt;svg&amp;gt; element with chart data...
+       .call(chart);          //Finally, render the chart!
+
+   //Update the chart when window resizes.
+   nv.utils.windowResize(function() { chart.update() });
+   return chart;
+ });
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ce code a dû ête adapté de deux façons :&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;la première a été d&amp;rsquo;&lt;em&gt;enfermer&lt;/em&gt; le code dans une fonction afin qu&amp;rsquo;il soit réutilisable aisément ;&lt;/li&gt;
+&lt;li&gt;la seconde a été de créer une fonction de lecture de données basée sur d3.csv afin de pouvoir lire un fichier csv en entrée du graphe.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Ces techniques seront détaillées dans un post ultérieur.&lt;/p&gt;
+</description>
+        </item>
+      
     
       
         <item>
